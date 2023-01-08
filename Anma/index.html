@@ -1,0 +1,515 @@
+<html dir="rtl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    <title>إختبار يوم التأسيس</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+ <!-- 1.0 -->
+    <div class="mt-5" id="start">
+        <div class="container centered nameDiv" style="font-size: 2px;">
+            <div class="text-center">
+                <h1 style="color: #fff; padding-bottom: 1.5rem;">نموذج البيانات الأولية للطفل</h1>
+                <div class="error-msg"></div>
+                <div class="row justify-content-center">
+                    <form name="form" onkeydown="return event.key != 'Enter';">
+                        <div class="form-group">
+                            <input class="text-center form-control input mt-2 center" name="userName" type="text"
+                                placeholder="اسم الطفل">
+                        </div>
+						 <div class="form-group">
+                            <input class="text-center form-control input mt-2 center" name="userName1" type="text"
+                                placeholder="اسم الفاحص">
+                        </div>
+						 <div class="form-group">
+                            <input class="text-center form-control input mt-2 center" name="userName2" type="text"
+                                placeholder="صلته بالطفل">
+                        </div>
+						 <div class="form-group">
+                            <input class="text-center form-control input mt-2 center" name="userName3" type="text"
+                                placeholder="جنس الطفل">
+                        </div>
+						 <div class="form-group">
+                            <input class="text-center form-control input mt-2 center" name="userName4" type="text"
+                                placeholder="تاريخ الميلاد">
+                        </div>
+						 <div class="form-group">
+                            <input class="text-center form-control input mt-2 center" name="userName5" type="text"
+                                placeholder="عدد الاخوة">
+                        </div>
+						 <div class="form-group">
+                            <input class="text-center form-control input mt-2 center" name="userName6" type="text"
+                                placeholder="ترتيب الطفل بين اخوته">
+                        </div>
+						 <div class="form-group">
+                            <input class="text-center form-control input mt-2 center" name="userName7" type="text"
+                                placeholder="مكان الميلاد">
+                        </div>
+						<div class="form-group">
+                            <input class="text-center form-control input mt-2 center" name="userName8" type="text"
+                                placeholder="مكان الإقامة">
+                        </div>
+                    </form>
+                </div>
+                <button class="btn btn-dangedr btn-next border-0 m-0 start-btn"> ابدا النموذج </button>
+            </div>
+        </div>
+    </div>
+
+	
+    <!-- 1 -->
+    <div class="mt-10" id="question1" style="display: none">
+        <div class="container centered contentDiv">
+            <div class="text-center mb-0">
+                <div class="container2">
+                    <div class="questionDiv">
+                        <p style="padding-bottom: 10px">هل انتقل الطفل من مكان اقامته في الخمس سنوات الأولى من عمره (يشمل الانتقال إلى منزل الأقارب أو الأجداد لأي سبب):</p>
+                    </div>
+                </div>
+
+                <div class="error-msg pt-3"></div>
+
+                <div class="choice radio-toolbar pt-2">
+                    <form name="form">
+                        <div class="options">
+                            <input type="radio" name="options" value="5" id="opt0">
+                            <label for="opt0" id="lb0">نعم</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" name="options" value="0" id="opt1">
+                            <label for="opt1" id="lb1">لا</label>
+                        </div>
+                    </form>
+                </div>
+
+                <button class="btn btn-dangedr btn-lg btn-next border-0 mt-2 clickToQ2">التالي</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="mt-5" id="question2" style="display: none">
+        <div class="container centered contentDiv">
+            <div class="text-center mb-4">
+                <div class="container1">
+                    <div class="questionDiv">
+                        <p style="padding-bottom: 10px; font-size: 22px;">هل يعيش الطفل مع والديه: </p>
+                    </div>
+                </div>
+
+                <div class="error-msg pt-3"></div>
+
+                <div class="choice radio-toolbar pt-4">
+                    <form name="form">
+                        <div class="options">
+                            <input type="radio" name="options" value="0" id="opt3">
+                            <label for="opt3" id="lb1">نعم</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" name="options" value="5" id="opt4">
+                            <label for="opt4" id="lb0">لا</label>
+                        </div>
+           
+                    </form>
+                </div>
+
+                <div class="next-button"><button
+                        class="btn btn-dangedr btn-lg btn-next border-0 mt-2 clickToQ3">التالي</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="mt-5" id="question3" style="display: none">
+        <div class="container centered contentDiv">
+            <div class="text-center mb-4">
+                <div class="container1">
+                    <div class="questionDiv">
+                        <p style="padding-bottom: 10px">هل هناك أمراض وراثية في العائلة مثل الحساسية أو السكر أو أي اضطرابات صحية أخرى :</p>
+                    </div>
+                </div>
+
+                <div class="error-msg pt-3"></div>
+
+                <div class="choice radio-toolbar pt-4">
+                    <form name="form">
+                        <div class="options">
+                            <input type="radio" name="options" value="5" id="opt6">
+                            <label for="opt6" id="lb1">نعم</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" name="options" value="0" id="opt7">
+                            <label for="opt7" id="lb1">لا</label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="next-button"><button
+                        class="btn btn-dangedr btn-lg btn-next border-0 mt-2 clickToQ4">التالي</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="mt-5" id="question4" style="display: none">
+        <div class="container centered contentDiv">
+            <div class="text-center mb-4">
+                <div class="container1">
+                    <div class="questionDiv">
+                        <p style="padding-bottom: 10px">هل يتواصل الطفل مع الأم بعينيه لمدة تصل 10 ثواني فأكثر:</p>
+                    </div>
+                </div>
+
+                <div class="error-msg pt-3"></div>
+
+                <div class="choice radio-toolbar pt-4">
+                    <form name="form">
+                        <div class="options">
+                            <input type="radio" name="options" value="5" id="opt9">
+                            <label for="opt9" id="lb1">نعم</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" name="options" value="0" id="opt10">
+                            <label for="opt10" id="lb1">لا</label>
+                        </div>
+                        
+                    </form>
+                </div>
+
+                <div class="next-button"><button
+                        class="btn btn-dangedr btn-lg btn-next border-0 mt-2 clickToQ5">التالي</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="mt-5" id="question5" style="display: none">
+        <div class="container centered contentDiv">
+            <div class="text-center mb-4">
+                <div class="container1">
+                    <div class="questionDiv">
+                        <p style="padding-bottom: 10px; font-size: 22px;">هل يبدي الطفل أي استجابة عند مناداته باسمه:</p>
+                    </div>
+                </div>
+
+                <div class="error-msg pt-3"></div>
+
+                <div class="choice radio-toolbar pt-4">
+                    <form name="form">
+                        <div class="options">
+                            <input type="radio" name="options" value="5" id="opt12">
+                            <label for="opt12" id="lb0">نعم</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" name="options" value="0" id="opt13">
+                            <label for="opt13" id="lb0">لا</label>
+                        </div>
+     
+                    </form>
+                </div>
+
+                <div class="next-button"><button
+                        class="btn btn-dangedr btn-lg btn-next border-0 mt-2 clickToQ6">التالي</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="mt-5" id="question6" style="display: none">
+        <div class="container centered contentDiv">
+            <div class="text-center mb-4">
+                <div class="container1">
+                    <div class="questionDiv">
+                        <p style="padding-bottom: 10px">هل يستطيع الطفل الانتظار في مكانه هادئاً عندما يطلب منه ذلك لمدة لدقائق معدودة:</p>
+                    </div>
+                </div>
+
+                <div class="error-msg pt-3"></div>
+
+                <div class="choice radio-toolbar pt-4">
+                    <form name="form">
+                        <div class="options">
+                            <input type="radio" name="options" value="5" id="opt15">
+                            <label for="opt15" id="lb0">نعم</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" name="options" value="0" id="opt16">
+                            <label for="opt16" id="lb1">لا</label>
+                        </div>
+                    
+                    </form>
+                </div>
+
+                <div class="next-button"><button
+                        class="btn btn-dangedr btn-lg btn-next border-0 mt-2 clickToQ61">التالي</button></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 61 -->
+    <div class="mt-5" id="question61" style="display: none">
+        <div class="container centered contentDiv">
+            <div class="text-center mb-4">
+                <div class="container1">
+                    <div class="questionDiv">
+                        <p style="padding-bottom: 10px">هل يظهر الطفل أي استجابة للأوامر الطفل للأوامر البسيطة مثل تعال أو خذ أو هات::</p>
+                    </div>
+                </div>
+
+                <div class="error-msg pt-3"></div>
+
+                <div class="choice radio-toolbar pt-4">
+                    <form name="form">
+                        <div class="options">
+                            <input type="radio" name="options" value="5" id="opt17">
+                            <label for="opt17" id="lb0">نعم</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" name="options" value="0" id="opt18">
+                            <label for="opt18" id="lb1">لا</label>
+                        </div>
+                    
+                    </form>
+                </div>
+
+                <div class="next-button"><button
+                        class="btn btn-dangedr btn-lg btn-next border-0 mt-2 clickToQ62">التالي</button></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 62 -->
+    <div class="mt-5" id="question62" style="display: none">
+        <div class="container centered contentDiv">
+            <div class="text-center mb-4">
+                <div class="container1">
+                    <div class="questionDiv">
+                        <p style="padding-bottom: 10px">هل يميز الطفل والديه أو الأشخاص الذين يعيشون معه:</p>
+                    </div>
+                </div>
+
+                <div class="error-msg pt-3"></div>
+
+                <div class="choice radio-toolbar pt-4">
+                    <form name="form">
+                        <div class="options">
+                            <input type="radio" name="options" value="5" id="opt19">
+                            <label for="opt19" id="lb0">نعم</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" name="options" value="0" id="opt20">
+                            <label for="opt20" id="lb1">لا</label>
+                        </div>
+                    
+                    </form>
+                </div>
+
+                <div class="next-button"><button
+                        class="btn btn-dangedr btn-lg btn-next border-0 mt-2 clickToQ63">التالي</button></div>
+            </div>
+        </div>
+    </div>
+	
+	    <!-- 63 -->
+    <div class="mt-5" id="question63" style="display: none">
+        <div class="container centered contentDiv">
+            <div class="text-center mb-4">
+                <div class="container1">
+                    <div class="questionDiv">
+                        <p style="padding-bottom: 10px">ينطق الطفل بخمس كلمات فأكثر بشكل واضح ومفهوم:</p>
+                    </div>
+                </div>
+
+                <div class="error-msg pt-3"></div>
+
+                <div class="choice radio-toolbar pt-4">
+                    <form name="form">
+                        <div class="options">
+                            <input type="radio" name="options" value="5" id="opt21">
+                            <label for="opt21" id="lb0">نعم</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" name="options" value="0" id="opt22">
+                            <label for="opt22" id="lb1">لا</label>
+                        </div>
+                    
+                    </form>
+                </div>
+
+                <div class="next-button"><button
+                        class="btn btn-dangedr btn-lg btn-next border-0 mt-2 clickToQ64">التالي</button></div>
+            </div>
+        </div>
+    </div>
+		    <!-- 64 -->
+    <div class="mt-5" id="question64" style="display: none">
+        <div class="container centered contentDiv">
+            <div class="text-center mb-4">
+                <div class="container1">
+                    <div class="questionDiv">
+                        <p style="padding-bottom: 10px">هل شهية الطفل منتظمة؟</p>
+                    </div>
+                </div>
+
+                <div class="error-msg pt-3"></div>
+
+                <div class="choice radio-toolbar pt-4">
+                    <form name="form">
+                        <div class="options">
+                            <input type="radio" name="options" value="5" id="opt23">
+                            <label for="opt23" id="lb0">نعم</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" name="options" value="0" id="opt24">
+                            <label for="opt24" id="lb1">لا</label>
+                        </div>
+                    
+                    </form>
+                </div>
+
+                <div class="next-button"><button
+                        class="btn btn-dangedr btn-lg btn-next border-0 mt-2 clickToQ65">التالي</button></div>
+            </div>
+        </div>
+    </div>
+	    <!-- 65 -->
+    <div class="mt-5" id="question65" style="display: none">
+        <div class="container centered contentDiv">
+            <div class="text-center mb-4">
+                <div class="container1">
+                    <div class="questionDiv">
+                        <p style="padding-bottom: 10px">هل وزن وطول الطفل ضمن المعدل الطبيعي بناء على رأي طبيب الأطفال:</p>
+                    </div>
+                </div>
+
+                <div class="error-msg pt-3"></div>
+
+                <div class="choice radio-toolbar pt-4">
+                    <form name="form">
+                        <div class="options">
+                            <input type="radio" name="options" value="5" id="opt25">
+                            <label for="opt25" id="lb0">نعم</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" name="options" value="0" id="opt26">
+                            <label for="opt26" id="lb1">لا</label>
+                        </div>
+                    
+                    </form>
+                </div>
+
+                <div class="next-button"><button
+                        class="btn btn-dangedr btn-lg btn-next border-0 mt-2 clickToQ66">التالي</button></div>
+            </div>
+        </div>
+    </div>
+	
+		    <!-- 66 -->
+    <div class="mt-5" id="question66" style="display: none">
+        <div class="container centered contentDiv">
+            <div class="text-center mb-4">
+                <div class="container1">
+                    <div class="questionDiv">
+                        <p style="padding-bottom: 10px">هل ينام الطفل ويستيقظ الطفل في أوقات محددة:</p>
+                    </div>
+                </div>
+
+                <div class="error-msg pt-3"></div>
+
+                <div class="choice radio-toolbar pt-4">
+                    <form name="form">
+                        <div class="options">
+                            <input type="radio" name="options" value="5" id="opt27">
+                            <label for="opt27" id="lb0">نعم</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" name="options" value="0" id="opt28">
+                            <label for="opt28" id="lb1">لا</label>
+                        </div>
+                    
+                    </form>
+                </div>
+
+                <div class="next-button"><button
+                        class="btn btn-dangedr btn-lg btn-next border-0 mt-2 clickToQ7">التالي</button></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 7 -->
+    <div class="mt-5" id="question7" style="display: none">
+        <div class="container centered contentDiv">
+            <div class="text-center mb-4">
+                <div class="container1">
+                    <div class="questionDiv">
+                        <p style="padding-bottom: 10px">هل يعاني الطفل من أي امراض مزمنة تستدعي دخوله المستشفى لاقدر الله:</p>
+                    </div>
+                </div>
+
+                <div class="error-msg pt-3"></div>
+
+                <div class="choice radio-toolbar pt-4">
+                    <form name="form">
+                        <div class="options">
+                            <input type="radio" name="options" value="5" id="opt29">
+                            <label for="opt29" id="lb1">نعم</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" name="options" value="0" id="opt30">
+                            <label for="opt30" id="lb0">لا</label>
+                        </div>
+                    
+                    </form>
+                </div>
+
+                <div class="next-button"><button
+                        class="btn btn-dangedr btn-lg btn-next border-0 mt-2 clickToResult">التالي</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- result -->
+    <div class="mt-5" id="result" style="display: none">
+        <div class="container resultDiv centered">
+
+            <div class="container1">
+                <img class="img-fluid" src="img/result.svg" alt="">
+                <div class="centered show-result centered"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="share-options"></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
+        crossorigin="anonymous "></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
